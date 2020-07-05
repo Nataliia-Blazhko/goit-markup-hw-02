@@ -1,0 +1,230 @@
+:root {
+--main-font: "Roboto", sans-serif;
+--secondary-font: "Raleway", sans-serif;
+--main-font-color: #212121;
+--secondary-font-color:  #757575;
+--main-title-color:  #FFFFFF;
+--logo-color: #000000;
+--accent-color: #2196F3;
+--main-background-color: #FFFFFF;
+--secondary-background-color:  #F5F4FA;
+--footer-info-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+background-color: var(--main-background-color); 
+font-family: var(--main-font);
+font-style: normal;
+
+}
+.link {
+text-decoration: none;
+}
+
+.list {
+list-style: none;
+}
+
+/*Шапка сайта*/
+.logo {
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color:var(--logo-color);
+}
+
+.logo-first-word {
+color:var(--accent-color);
+}
+
+.navigation-list-link,
+.header-tel,
+.header-mail {
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-font-color);
+}
+
+.navigation-list-link:hover, 
+.navigation-list-link:focus, 
+.header-tel:hover,
+.header-tel:focus,
+.header-mail:hover, 
+.header-mail:focus {
+color:var(--accent-color);
+}
+
+.header-tel,
+.header-mail {
+color:var(--secondary-font-color);
+}
+
+/* HERO блок*/
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color:var(--main-title-color);
+/* временный фон */
+background-color: rgba(47, 48, 58, 0.8);
+}
+
+.modal-btn {
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--main-title-color);
+background-color:var(--accent-color);
+}
+
+/* Особенности*/
+.features-list-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--main-font-color);
+}
+
+.features-list-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:var(--secondary-font-color);  
+}
+
+/* Чем мы занимаемся */
+.sections-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--main-font-color);
+}
+
+.what-we-do-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--main-title-color);
+/* временный фон */
+background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Наша команда */
+.our-team{
+background-color:var(--secondary-background-color);
+}
+
+.team-people {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--main-font-color);
+}
+
+.position{
+text-align: center;
+color:var(--secondary-font-color);
+}
+.social-links-item-link:hover,
+.social-links-item-link:focus {
+color:  var(--accent-color);
+}
+
+/* Наши клиенты */
+
+
+/* Подвал сайта */
+.footer {
+background-color:  #2F303A;
+}
+
+.contact-info-link{
+font-style: normal;
+color:var(--footer-info-color);
+}
+
+.contact-info-address{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--main-title-color);
+}
+
+.call{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--main-title-color);
+}
+
+.contacts .logo{  
+color: var(--main-title-color);
+} 
+
+/* Страничка портфолио */
+.filter-btn{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+letter-spacing: 0.03em;
+color: var(--main-font-color);
+}
+
+.accent-btn{
+color: var(--main-title-color); 
+background-color:var(--accent-color);
+}
+
+.filter-btn:hover, 
+.filter-btn:focus {
+color: var(--main-title-color);
+background-color:var(--accent-color);
+} 
+
+.work-examples-list-title {
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--main-font-color);
+}
+
+.work-examples-list-text {
+font-weight: normal;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color:var(--secondary-font-color);  
+}
+
+.popup-text {
+font-weight: normal;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--main-title-color);
+}

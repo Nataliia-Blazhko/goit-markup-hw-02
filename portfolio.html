@@ -4,101 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+   <!--Шапка сайта-->
+    <header class="header">
         <!-- Блок навигации -->
-        <nav>
-          <a href="./index.html" lang="en"> <span>Web</span>Studio</a>
-          <ul>
-            <li><a href="">Студия</a></li>
-            <li><a href="">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+        <nav class="navigation">
+          <a class="logo link" href="./index.html" lang="en"> <span class="logo-first-word">Web</span>Studio</a>
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Студия</a></li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Портфолио</a></li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <address class="header-address">
+        <ul class="adress-list list">
+          <li>
+            <a  class="header-tel link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a  class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
+      </address>
       </header>
       <main>
-       <section>
+       <section class="portfolio">
          <h1 hidden>Портфолио работ</h1>
-         <ul>
-            <li><button>Все</button></li>
-            <li><button>Веб-сайты</button></li>
-            <li><button>Приложения</button></li>
-            <li><button>Дизайн</button></li>
-            <li><button>Маркетинг</button></li>
+         <ul class="filter">
+            <li class="filter-btn-list list"><button class="filter-btn accent-btn">Все</button></li>
+            <li class="filter-btn-list list"><button class="filter-btn">Веб-сайты</button></li>
+            <li class="filter-btn-list list"><button class="filter-btn">Приложения</button></li>
+            <li class="filter-btn-list list"><button class="filter-btn">Дизайн</button></li>
+            <li class="filter-btn-list list"><button class="filter-btn">Маркетинг</button></li>
          </ul>
-         <ul>
-           <li>
+         <ul class="work-examples-list list">
+           <li class="work-examples-list-item">
              <img src="./images/pic1.jpg" alt="Технокряк">
-             <h2>Технокряк</h2>
-             <p>Веб-сайт</p>
+             <h2 class="work-examples-list-title">Технокряк</h2>
+             <p class="work-examples-list-text">Веб-сайт</p>
+             <p hidden class="popup-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
            </li>
-           <li>
+           <li class="work-examples-list-item">
             <img src="./images/pic2.jpg" alt="Постер Нью Орлеан вс Голден Стар">
-            <h2>Постер <span lang="en">Orlean vs Golden Star</span></h2>
-            <p>Дизайн</p>
+            <h2 class="work-examples-list-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+            <p class="work-examples-list-text">Дизайн</p>
            </li>
-           <li>
+           <li class="work-examples-list-item">
             <img src="./images/pic3.jpg" alt="Ресторан Сифуд">
-            <h2>Ресторан  <span lang="en">Seafood</span> </h2>
-            <p>Приложение</p>
+            <h2 class="work-examples-list-title">Ресторан  <span lang="en">Seafood</span> </h2>
+            <p class="work-examples-list-text">Приложение</p>
            </li>
-           <li>  
+           <li class="work-examples-list-item">  
             <img src="./images/pic4.jpg" alt="Проект Прайм">
-            <h2>Проект  <span lang="en">Prime</span></h2>
-            <p>Маркетинг</p></li>
-           <li>  
+            <h2 class="work-examples-list-title">Проект  <span lang="en">Prime</span></h2>
+            <p class="work-examples-list-text">Маркетинг</p></li>
+           <li class="work-examples-list-item">  
             <img src="./images/pic5.jpg" alt="Проект Боксес">
-            <h2>Проект  <span lang="en">Boxes</span></h2>
-            <p>Приложение</p></li>
-           <li> 
+            <h2 class="work-examples-list-title">Проект  <span lang="en">Boxes</span></h2>
+            <p class="work-examples-list-text">Приложение</p></li>
+           <li class="work-examples-list-item"> 
             <img src="./images/pic6.jpg" alt="Інспірейшн хез ноу бордерс">
-            <h2> <span lang="en">Inspiration has no Borders</span></h2>
-            <p>Веб-сайт</p></li>
-           <li>  
+            <h2 class="work-examples-list-title"> <span lang="en">Inspiration has no Borders</span></h2>
+            <p class="work-examples-list-text">Веб-сайт</p></li>
+           <li class="work-examples-list-item">  
             <img src="./images/pic7.jpg" alt="Издание Лімітед Едішн">
-            <h2>Издание  <span lang="en">Limited Edition</span></h2>
-            <p>Дизайн</p></li>
-           <li>
+            <h2 class="work-examples-list-title">Издание  <span lang="en">Limited Edition</span></h2>
+            <p class="work-examples-list-text">Дизайн</p></li>
+           <li class="work-examples-list-item">
             <img src="./images/pic8.jpg" alt="Проект ЛАБ">
-            <h2>Проект  <span lang="en">LAB</span></h2>
-            <p>Маркетинг</p>
+            <h2 class="work-examples-list-title">Проект  <span lang="en">LAB</span></h2>
+            <p class="work-examples-list-text">Маркетинг</p>
            </li>
-           <li>  
+           <li class="work-examples-list-item">  
             <img src="./images/pic9.jpg" alt="Гроуінг Бізнес">
-            <h2> <span lang="en">Growing Business</span></h2>
-            <p>Приложение</p></li>
+            <h2 class="work-examples-list-title"> <span lang="en">Growing Business</span></h2>
+            <p class="work-examples-list-text">Приложение</p></li>
          </ul>
 
        </section>
       </main>
-      <footer>
-        <div>
-          <a href="./index.html" lang="en"> <span>Web</span>Studio</a>
+      <footer class="footer">
+        <div class="contacts">
+          <a class="logo link" href="./index.html" lang="en"> <span class="logo-first-word">Web</span>Studio</a>
           <address>
-            <a href="https://goo.gl/maps/yQj5MutNtVPwPQLq6">
-            г. Киев, пр-т Леси Украинки, 26</a>
-            <br />
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a><br>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <ul class="contact-info list">
+              <li class="contact-info-item">
+                <a class="contact-info-address link" href="https://goo.gl/maps/yQj5MutNtVPwPQLq6">
+                г. Киев, пр-т Леси Украинки, 26</a><br>
+              </li>
+              <li class="contact-info-item"> 
+                <a class="contact-info-link link" href="mailto:info@devstudio.com">info@devstudio.com</a><br>
+              </li>
+              <li class="contact-info-item">
+                <a class="contact-info-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              </ul>
           </address>
         </div>
         <div>
-          <b>Присоединяйтесь</b>
-          <ul>
-            <li><a href="" aria-label="Ссылка на Instagram"> Instagram </a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+          <b class="call">Присоединяйтесь</b>
+          <ul class="social-links-list">
+            <li class="social-links-item list"><a class="social-links-item-link link" href="" aria-label="Ссылка на Instagram"> Instagram </a></li>
+            <li class="social-links-item list"><a class="social-links-item-link link" href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+            <li class="social-links-item list"><a class="social-links-item-link link" href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+            <li class="social-links-item list"><a class="social-links-item-link link" href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
           </ul>
         </div>
         <div>
-          <b>Подпишитесь на рассылку</b>
-          <button>Подписаться</button>
+          <b class="call">Подпишитесь на рассылку</b>
+          <button class="modal-btn">Подписаться</button>
         </div>
       </footer>
 </body>
